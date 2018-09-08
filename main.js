@@ -72,5 +72,16 @@ const translatedFrenchText = () => {
  const italianButton = document.getElementById('Italian');
  italianButton.addEventListener("click", translatedItalianText);
 
-//  const resetButton = document.getElementById('Reset').reset();
-//  resetButton.addEventListener("click", reset);
+/// Random Button ///
+
+// const translatedText = () => {
+//     let inputText = document.getElementById('textArea').value;
+//     let inputWords = inputText.split(' ');
+//     for (i = 0; i < inputWords.length; i++) {
+//        output= (italian.french.spanish[inputWords[i]]); 
+//     }
+//     printToDom(output,'emptyDiv');
+//  };
+
+//  const randomButton = document.getElementById('Random');
+//  randomButton.addEventListener("click", translatedText);
