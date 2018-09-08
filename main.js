@@ -12,8 +12,14 @@ let translator = {
         {english: "and", translation: "et"},
         {english: "Happy", translation: "Content"},
         {english: "Holidays", translation: "Vacances"},
-    ]
-
+    ],
+    italian: [
+        {english: "Season", translation: "Stagione"},
+        {english: "Greetings", translation: "Saluti"},
+        {english: "and", translation: "e"},
+        {english: "Happy", translation: "Contento"},
+        {english: "Holidays", translation: "Vacanze"},
+    ],
 }
 
 const printToDom = (stringToPrint, divId) => {
