@@ -30,12 +30,14 @@ const italian =
 
 /// Spanish Button ///        
 
+let output = '';
 const translatedSpanishText = () => {
    let inputText = document.getElementById('textArea').value;
    let inputWords = inputText.split(' ');
    for (i = 0; i < inputWords.length; i++) {
-      console.log(spanish[inputWords[i]]); 
+    output = (spanish[inputWords[i]]); 
    }
+   printToDom(output,'emptyDiv');
 };
 
 const spanishButton = document.getElementById('Spanish');
@@ -47,8 +49,9 @@ const translatedFrenchText = () => {
     let inputText = document.getElementById('textArea').value;
     let inputWords = inputText.split(' ');
     for (i = 0; i < inputWords.length; i++) {
-       console.log(french[inputWords[i]]); 
+       output = (french[inputWords[i]]); 
     }
+    printToDom(output,'emptyDiv');
  };
  
  const frenchButton = document.getElementById('French');
@@ -56,4 +59,15 @@ const translatedFrenchText = () => {
 
  /// Italian Button ///
 
+ const translatedItalianText = () => {
+    let inputText = document.getElementById('textArea').value;
+    let inputWords = inputText.split(' ');
+    for (i = 0; i < inputWords.length; i++) {
+       output= (italian[inputWords[i]]); 
+    }
+    printToDom(output,'emptyDiv');
+ };
+ 
+ const italianButton = document.getElementById('Italian');
+ italianButton.addEventListener("click", translatedItalianText);
 
