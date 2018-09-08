@@ -1,29 +1,24 @@
-let translator = {
-    spanish: [
-        {english: "Season", translation: "Temporada"},
-        {english: "Greetings", translation: "Saludos"},
-        {english: "and", translation: "y"},
-        {english: "Happy", translation: "Contento"},
-        {english: "Holidays", translation: "Vacaciones"},
-    ],
-    french: [
-        {english: "Season", translation: "Saison"},
-        {english: "Greetings", translation: "Salutations"},
-        {english: "and", translation: "et"},
-        {english: "Happy", translation: "Content"},
-        {english: "Holidays", translation: "Vacances"},
-    ],
+const translator = {
+    spanish: 
+        {"Season":"Temporada","Greetings":"Saludos","and":"y","Happy":"Contento","Holidays": "Vacaciones"},
+    french: 
+        {"Season": "Saison","Greetings": "Salutations","and": "et","Happy": "Content","Holidays": "Vacances"},
     italian: [
-        {english: "Season", translation: "Stagione"},
-        {english: "Greetings", translation: "Saluti"},
-        {english: "and", translation: "e"},
-        {english: "Happy", translation: "Contento"},
-        {english: "Holidays", translation: "Vacanze"},
-    ],
-}
+        {"Season": "Stagione","Greetings": "Saluti","and": "e","Happy": "Contento","Holidays": "Vacanze"}
+
 
 const printToDom = (stringToPrint, divId) => {
     const selectedDiv = document.getElementById(divId);
     selectedDiv.innerHTML += stringToPrint;
 };
+
+
+let spanishText = () => {
+    for (i = 0; 1 < translator.spanish.length; i++) {
+        if (translator.spanish[i] === english){
+            printToDom(translator.spanish[i])
+        } else printToDom ("Wrong!");
+    }
+};
+
 
