@@ -5,32 +5,33 @@ const printToDom = (stringToPrint, divId) => {
 };
 
 const spanish =
-        {"Season": "Temporada",
-        "Greetings": "Saludos", 
-        "and": "y",
-        "Happy": "Contento", 
-        "Holidays": "Vacaciones"
+        {"Season": "Temporada ",
+        "Greetings": "Saludos ", 
+        "And": "y ",
+        "Happy": "Contento ", 
+        "Holidays": "Vacaciones "
         };
  
 const french =
-        {"Season": "Saison",
-        "Greetings": "Salutations", 
-        "and": "et",
-        "Happy": "Content", 
-        "Holidays": "Vacances"
+        {"Season": "Saison ",
+        "Greetings": "Salutations ", 
+        "And": "et ",
+        "Happy": "Content ", 
+        "Holidays": "Vacances "
         };
 
 const italian =
-        {"Season": "Stagione",
-        "Greetings": "Saluti", 
-        "and": "e",
-        "Happy": "Contento", 
-        "Holidays": "Vacanze"
+        {"Season": "Stagione ",
+        "Greetings": "Saluti ", 
+        "And": "e ",
+        "Happy": "Contento ", 
+        "Holidays": "Vacanze "
         };
 
 /// Spanish Button ///        
 
 let output = '';
+
 const translatedSpanishText = () => {
    let inputText = document.getElementById('textArea').value;
    let inputWords = inputText.split(' ');
@@ -70,3 +71,17 @@ const translatedFrenchText = () => {
  
  const italianButton = document.getElementById('Italian');
  italianButton.addEventListener("click", translatedItalianText);
+
+/// Random Button ///
+
+// const translatedText = () => {
+//     let inputText = document.getElementById('textArea').value;
+//     let inputWords = inputText.split(' ');
+//     for (i = 0; i < inputWords.length; i++) {
+//        output= (italian.french.spanish[inputWords[i]]); 
+//     }
+//     printToDom(output,'emptyDiv');
+//  };
+
+//  const randomButton = document.getElementById('Random');
+//  randomButton.addEventListener("click", translatedText);
