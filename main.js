@@ -70,4 +70,3 @@ const translatedFrenchText = () => {
  
  const italianButton = document.getElementById('Italian');
  italianButton.addEventListener("click", translatedItalianText);
-
