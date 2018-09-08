@@ -1,4 +1,14 @@
 body {
     background-color: whitesmoke;
+    border-style: solid;
+    padding: 50px;
+    margin: 20px 300px 80px 300px;
+    text-align: center;
 }
+
+li {
+    list-style-type: none;
+    margin-right: 30px;
+}
+
 
